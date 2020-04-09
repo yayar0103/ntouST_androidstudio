@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalenderActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BE06305A"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:textAlignment="center"
+        android:theme="@style/AppTheme.ToolBarStyle"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleMargin="3dp">
+
+        <ImageView
+            android:id="@+id/toolbar_image"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo2" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+
+        </WebView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/fab_style"
+                android:backgroundTint="@color/selected_background"
+                android:clickable="true"
+                android:elevation="3dp"
+                app:fabSize="normal"
+                app:maxImageSize="35dp"
+                app:rippleColor="#0AFFFFFF"
+                app:srcCompat="@drawable/format" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
